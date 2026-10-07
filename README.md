@@ -10,6 +10,8 @@
   <sub>수조 시험</sub>
 </p>
 
+📄 발표 자료(PDF): [창의적종합설계](https://github.com/gwanhuiGIM/grad_proj/releases/download/presentation/grad_creative_design.pdf) · [심화종합설계](https://github.com/gwanhuiGIM/grad_proj/releases/download/presentation/grad_advanced_design.pdf)
+
 > **핵심 설계**: 8bit Arduino Uno 하나가 센서 처리와 모터 구동을 모두 맡기 때문에, 8×8 열화상 값을 열(column)별 최고 온도만 남긴 1×8로 줄여 "가장 뜨거운 쪽이 왼쪽인지 오른쪽인지"만 판정합니다. 조향은 방향키 대신 좌우 DC 모터의 PWM 차이로 합니다(착수 충격에 방향키가 부서질 위험을 피하려는 선택).
 
 ```
