@@ -5,10 +5,10 @@
 
 > 출처: 충남대 기계공학부 졸업프로젝트(캡스톤디자인, 3인 팀, 24.08~25.08). 본인 담당은 좌우 DC 모터 차동 제어 · 아두이노 회로 구성입니다. 원본 `.ino`가 남아 있지 않아, 졸업논문에 실린 코드(Figure 16)를 그대로 옮겨 재구성했습니다. 이 저장소에서 바꾼 것은 줄바꿈 복원과 주석뿐입니다. 더 많은 제작 과정·사진은 [포트폴리오 사이트](https://gwanhuigim.github.io), 다른 프로젝트는 [GitHub 프로필](https://github.com/gwanhuiGIM)에 있습니다.
 
-<p align="center">
-  <img src="docs/gifs/grad_proj_boat.gif" width="480" alt="수조에서 보트가 주행하는 시험"><br>
-  <sub>수조 시험</sub>
-</p>
+<table align="center"><tr>
+  <td align="center"><img src="docs/gifs/grad_launch.gif" height="300" alt="발사장치로 보트를 발사하는 시험"><br><sub>발사 시험</sub></td>
+  <td align="center"><img src="docs/gifs/grad_proj_boat.gif" height="300" alt="수조에서 보트가 주행하는 시험"><br><sub>수조 시험</sub></td>
+</tr></table>
 
 📄 발표 자료(PDF): [창의적종합설계](https://github.com/gwanhuiGIM/grad_proj/releases/download/presentation/grad_creative_design.pdf) · [심화종합설계](https://github.com/gwanhuiGIM/grad_proj/releases/download/presentation/grad_advanced_design.pdf)
 
