@@ -56,10 +56,20 @@ L298N 핀: IN1~IN4 = 2·3·4·5, ENA = 6, ENB = 7.
 
 ## 저장소 구성
 
+**핵심 코드 바로가기**
+
+| 파일 | 하는 일 | 설명 위치 |
+|:--|:--|:--|
+| ⭐ **[`lifeboat_control.ino` · `loop()`](lifeboat_control/lifeboat_control.ino#L183-L203)** | RC 3채널 펄스를 읽어 자율/수동 분기 | [시스템 구조](#시스템-구조) |
+| **[`lifeboat_control.ino` · `processIRSensor()`](lifeboat_control/lifeboat_control.ino#L80-L114)** | 8×8 열화상 → 상하 반전 → 열별 최고 1×8 → 방향 5단계 판정 | [시스템 구조](#시스템-구조) |
+| **[`lifeboat_control.ino` · `autonomousDrive()`](lifeboat_control/lifeboat_control.ino#L116-L134)** | 방향별 좌우 PWM 쌍을 `motorControl()`로 L298N에 출력 | [시스템 구조](#시스템-구조) |
+| **[`lifeboat_control.ino` · `manualDrive()`](lifeboat_control/lifeboat_control.ino#L136-L170)** | 조향·속도 채널 → 좌우 PWM, 특수기능 채널 → 구명튜브 팽창 | [시스템 구조](#시스템-구조) |
+
 ```
-lifeboat_control/lifeboat_control.ino   제어 코드 전체 (헤더에 회로·핀맵, 끝에 알려진 특이점)
+lifeboat_control/lifeboat_control.ino   ★ 제어 코드 전체 (헤더에 회로·핀맵, 끝에 알려진 특이점)
 docs/images/                            README 그림 (발표 자료에서 잘라 온 사진·도식)
 README.md
+★ = 위 "핵심 코드 바로가기" 파일이 있는 곳
 ```
 보트·발사장치 CAD, 논문, 발표 자료 원본은 팀 공동 산출물이라 이 저장소에 넣지 않았고, `docs/images/`에는 발표 자료에서 사진·도식 일부만 잘라 넣었습니다.
 
@@ -83,7 +93,7 @@ README.md
 <details>
 <summary>함수별 동작 · 선체 내부 사진 · 8×8→1×8 도식</summary>
 
-모든 로직은 `lifeboat_control/lifeboat_control.ino` 한 파일, `loop()` 하나에서 돕니다(주기 약 100ms + `pulseIn` 대기).
+모든 로직은 [`lifeboat_control/lifeboat_control.ino`](lifeboat_control/lifeboat_control.ino) 한 파일, `loop()` 하나에서 돕니다(주기 약 100ms + `pulseIn` 대기).
 
 <p align="center">
   <img src="docs/images/hull_interior.jpg" width="320" alt="선체를 열어 본 내부, Arduino Uno와 배선"><br>
