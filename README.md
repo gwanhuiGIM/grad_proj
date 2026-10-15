@@ -54,7 +54,15 @@ L298N 핀: IN1~IN4 = 2·3·4·5, ENA = 6, ENB = 7.
 
 ## 저장소 구성
 
-**핵심 코드 바로가기**
+```
+lifeboat_control/lifeboat_control.ino   ★ 제어 코드 전체 (헤더에 회로·핀맵, 끝에 알려진 특이점)
+docs/images/                            README 그림 (발표 자료에서 잘라 온 사진·도식)
+README.md
+★ = 아래 "핵심 코드 바로가기" 파일이 있는 곳
+```
+
+<details>
+<summary>핵심 코드 바로가기</summary>
 
 | 파일 | 하는 일 | 설명 위치 |
 |:--|:--|:--|
@@ -63,12 +71,8 @@ L298N 핀: IN1~IN4 = 2·3·4·5, ENA = 6, ENB = 7.
 | **[`lifeboat_control.ino` · `autonomousDrive()`](lifeboat_control/lifeboat_control.ino#L116-L134)** | 방향별 좌우 PWM 쌍을 `motorControl()`로 L298N에 출력 | [시스템 구조](#시스템-구조) |
 | **[`lifeboat_control.ino` · `manualDrive()`](lifeboat_control/lifeboat_control.ino#L136-L170)** | 조향·속도 채널 → 좌우 PWM, 특수기능 채널 → 구명튜브 팽창 | [시스템 구조](#시스템-구조) |
 
-```
-lifeboat_control/lifeboat_control.ino   ★ 제어 코드 전체 (헤더에 회로·핀맵, 끝에 알려진 특이점)
-docs/images/                            README 그림 (발표 자료에서 잘라 온 사진·도식)
-README.md
-★ = 위 "핵심 코드 바로가기" 파일이 있는 곳
-```
+</details>
+
 보트·발사장치 CAD, 논문, 발표 자료 원본은 팀 공동 산출물이라 이 저장소에 넣지 않았고, `docs/images/`에는 발표 자료에서 사진·도식 일부만 잘라 넣었습니다.
 
 ## 무엇을 할 수 있나
