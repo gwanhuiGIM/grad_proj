@@ -10,8 +10,6 @@
   <td align="center"><img src="docs/gifs/grad_proj_boat.gif" height="300" alt="수조에서 보트가 주행하는 시험"><br><sub>수조 시험</sub></td>
 </tr></table>
 
-📄 [창의적종합설계 발표 자료(PDF, 47쪽)](https://github.com/gwanhuiGIM/grad_proj/releases/download/presentation/grad_creative_design.pdf) · [심화종합설계 발표 자료(PDF, 48쪽)](https://github.com/gwanhuiGIM/grad_proj/releases/download/presentation/grad_advanced_design.pdf) — 세부 기술 발표 자료
-
 > **핵심 설계**: 8bit Arduino Uno 하나가 센서 처리와 모터 구동을 모두 맡기 때문에, 8×8 열화상 값을 열(column)별 최고 온도만 남긴 1×8로 줄여 "가장 뜨거운 쪽이 왼쪽인지 오른쪽인지"만 판정합니다. 조향은 방향키 대신 좌우 DC 모터의 PWM 차이로 합니다(착수 충격에 방향키가 부서질 위험을 피하려는 선택).
 
 ```
@@ -29,7 +27,7 @@ _주제별 바로가기입니다. 본문 배치 순서와 다를 수 있습니�
 
 - **개요·구조**: [환경 · 장비](#환경--장비) · [저장소 구성](#저장소-구성) · [무엇을 할 수 있나](#무엇을-할-수-있나) · [시스템 구조](#시스템-구조)
 - **돌려 보기**: [빌드 · 업로드](#빌드--업로드)
-- **검증·한계·참고**: [한계](#한계) · [검증](#검증) · [License](#license)
+- **검증·한계·참고**: [한계](#한계) · [검증](#검증) · [더 읽을 문서](#더-읽을-문서) · [License](#license)
 
 ## 환경 · 장비
 
@@ -143,6 +141,10 @@ Arduino IDE에서는 `lifeboat_control/lifeboat_control.ino`를 열고 보드를
 
 - `arduino-cli compile --fqbn arduino:avr:uno` 통과 (flash 8118B/25%, RAM 1047B/51%, Adafruit AMG88xx Library 1.3.2, 2026-10-06).
 - 업로드 명령과 이 재구성본의 실기 구동은 확인하지 않았습니다. 프로젝트 당시 실기 시연은 원본 코드로 했습니다.
+
+## 더 읽을 문서
+
+[창의적종합설계 발표 자료(PDF, 47쪽)](https://github.com/gwanhuiGIM/grad_proj/releases/download/presentation/grad_creative_design.pdf) · [심화종합설계 발표 자료(PDF, 48쪽)](https://github.com/gwanhuiGIM/grad_proj/releases/download/presentation/grad_advanced_design.pdf) — 세부 기술 발표 자료
 
 ## License
 
